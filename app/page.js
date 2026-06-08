@@ -1,11 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { supabase } from './lib/supabase';
+import { supabase, supabaseUrl, supabaseAnonKey } from './lib/supabase';
 import Image from 'next/image';
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 export default function Home() {
   const [mahasiswa, setMahasiswa] = useState([]);
